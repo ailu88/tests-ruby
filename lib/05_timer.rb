@@ -1,10 +1,10 @@
 def time_string(seconds)
 	
-	hours = seconds / 3600
-	minutes = (seconds % 3600) / 60
-	seconds = seconds - hours*3600 - minutes*60
+	hours = seconds / 3600    # isoler les heures
+	minutes = (seconds % 3600) / 60	#isoler les minutes
+	seconds = seconds - hours*3600 - minutes*60 #isoler les secondes
 
-	if hours <=9
+	if hours <=9				# rajouter un 0 avant le nombre s'il est trop petit
 		hours = "0"+"#{hours}"
 	end
 	if minutes <=9
@@ -14,6 +14,6 @@ def time_string(seconds)
 		seconds = "0"+"#{seconds}"
 	end
 		
-puts "#{hours}" + ":" + "#{minutes}"+ ":" + "#{seconds}"
-return "#{hours}" + ":" + "#{minutes}"+ ":" + "#{seconds}"
+
+return "#{hours}" + ":" + "#{minutes}"+ ":" + "#{seconds}" # retourne l'heure de manière organisée
 end
