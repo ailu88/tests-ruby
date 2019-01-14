@@ -1,3 +1,9 @@
+### THP S2 J1 
+- Paul
+- Eloise
+
+
+
 Small exercices in Ruby -- RSpec 3 Edition
 ==========
 
